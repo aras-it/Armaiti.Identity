@@ -17,7 +17,7 @@ Armaiti.Identity is a nuget package that focuses on localization features to loc
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            // IdentityResource is a resource class that include all localization resources of Identity models, Identity pages and Identity errors. All resx files are available [here](https://github.com/aras-it/Armaiti.Identity/tree/master/_files/resources).
+            // IdentityResource is a resource class that include all localization resources of Identity models, Identity pages and Identity errors.
             services.AddIdentityLocalizer<ArmaitiUser, IdentityResource>(options =>
                 options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
@@ -27,6 +27,7 @@ Armaiti.Identity is a nuget package that focuses on localization features to loc
         ...
 	}
     ```
+    **Note:** All resx files are available [here](https://github.com/aras-it/Armaiti.Identity/tree/master/_files/resources).
 
 -   **IdentityErrorLocalizer** is a generic service to enable localization for application facing identity errors.
 
