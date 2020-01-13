@@ -44,9 +44,10 @@ Armaiti.Identity is a nuget package that focuses on localization features to loc
 **PackageReference:** `<PackageReference Include="Armaiti.Identity" Version="1.1.0" />`
 
 ## Dependencies
-
 .NETCoreApp 3.1
+
 Armaiti.Core (>= 1.1.0)
+
 Microsoft.Extensions.Identity.Core (>= 3.1.0)
 
 ## License
