@@ -1,0 +1,25 @@
+﻿@page
+@model RoleAssignmentModel
+@{
+    ViewData["Title"] = Localizer["Assign Manager Role"];
+    ViewData["ActivePage"] = ManageNavPages.RoleAssignment;
+}
+<h4>@ViewData["Title"]</h4>
+<partial name="_StatusMessage" model="Model.StatusMessage" />
+<div class="row">
+    <div class="col-md-6">
+        <form id="manager-form" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control dir-left" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary@(UICulture.IsRTL ? " font-fa-b" : "")">@Localizer["Assign"]</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

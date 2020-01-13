@@ -1,0 +1,70 @@
+﻿@page
+@model EnableAuthenticatorModel
+@{
+    ViewData["Title"] = Localizer["Configure authenticator app"];
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+<h4>@ViewData["Title"]</h4>
+<div>
+    <p>@Localizer["To use an authenticator app go through the following steps:"]</p>
+    <ol class="list">
+        <li>
+            <p>
+                @Localizer["Download a two-factor authenticator app like Microsoft Authenticator for {0}, {1} and {2} or Google Authenticator for {3} and {4}.",
+                    Html.Raw("<a href=\"https://go.microsoft.com/fwlink/?Linkid=825071\">Windows Phone</a>"),
+                    Html.Raw("<a href=\"https://go.microsoft.com/fwlink/?Linkid=825072\">Android</a>"),
+                    Html.Raw("<a href=\"https://go.microsoft.com/fwlink/?Linkid=825073\">iOS</a>"),
+                    Html.Raw("<a href=\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en\">Android</a>"),
+                    Html.Raw("<a href=\"https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8\">iOS</a>")]
+            </p>
+        </li>
+        <li>
+            <p>
+                @Localizer["Scan the QR Code or enter this key <kbd>{0}</kbd> into your two factor authenticator app. Spaces and casing do not matter.", Model.SharedKey]
+            </p>
+            @*<div class="alert alert-info">
+                    @Localizer["To enable QR code generation please read our {0}documentation{1}.",
+                        Html.Raw("<a href=\"https://go.microsoft.com/fwlink/?Linkid=852423\">"),
+                        Html.Raw("</a>")]
+                </div>*@
+            <div id="qrCode"></div>
+            <div id="qrCodeData" data-url="@Html.Raw(Model.AuthenticatorUri)"></div>
+        </li>
+        <li>
+            <p>
+                @Localizer["Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below."]
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="send-code" method="post">
+                        <div class="form-group">
+                            <label asp-for="Input.Code" class="control-label">@Localizer["Verification Code"]</label>
+                            <input asp-for="Input.Code" class="form-control dir-left" autocomplete="off" />
+                            <span asp-validation-for="Input.Code" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary@(UICulture.IsRTL ? " font-fa-b" : "")">@Localizer["Verify"]</button>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ol>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript" src="~/lib/qrcode/qrcode.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var qrcode = new QRCode(document.getElementById("qrCode"), {
+                text: "@Html.Raw(Model.AuthenticatorUri)",
+                width: 128,
+                height: 128
+            });
+            //qrcode.clear(); // clear the code.
+            //qrcode.makeCode("@Html.Raw(Model.AuthenticatorUri)"); // make another code.
+        });
+    </script>
+}

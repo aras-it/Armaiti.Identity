@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="'{0}' successfully became a manager." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="2fa has been disabled. You can reenable 2fa when you setup an authenticator app" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="A code must be supplied for password reset." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="A user with this login already exists." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Access denied" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Add another service to log in." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Add authenticator app" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="An unknown failure has occurred." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Assign Manager Role" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Associate your {0} account." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Authenticator app" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Cannot disable 2FA for user with ID '{0}' as it's not currently enabled." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Cannot generate recovery codes for user with ID '{0}' because they do not have 2FA enabled." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Change email" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Change your account settings" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Configure authenticator app" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Confirm email" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Confirm email change" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Confirm your email" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Confirmation link to change email sent. Please check your email." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Create a new account." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Delete data and close my account" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Delete Personal Data" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Deleting this data will permanently remove your account, and this cannot be recovered." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Disable 2FA" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Disable two-factor authentication (2FA)" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should &lt;a asp-page=\&quot;./ResetAuthenticator\&quot;&gt;reset your authenticator keys.&lt;/a&gt;" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Don't have access to your authenticator device? You can {0} log in with a recovery code&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Download a two-factor authenticator app like Microsoft Authenticator for {0}, {1} and {2} or Google Authenticator for {3} and {4}." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Download Your Data" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Email '{0}' is already taken." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Email '{0}' is invalid." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Email '{0}' is not confirmed yet." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Enter your email." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error assigning role." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error changing email." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error changing user name." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error confirming email for user with ID" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error confirming your email." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error from external provider:" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error loading external login information during confirmation." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Error loading external login information." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="External logins" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Forget this browser" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Generate Recovery Codes" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Generate two-factor authentication (2FA) recovery codes" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should &lt;a asp-page=\&quot;./ResetAuthenticator\&quot;&gt;reset your authenticator keys.&lt;/a&gt;" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="If you lose your device and don't have the recovery codes you will lose access to your account." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="If you reset your authenticator key your authenticator app will not work until you reconfigure it." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Incorrect password." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Invalid authenticator code." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Invalid login attempt." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Invalid recovery code entered." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Invalid token." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Locked out" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Lockout is not enabled for this user." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Log in" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Log in using your {0} account" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Log out" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Manage Email" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Manage your account" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Manage your external logins" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="New role" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Optimistic concurrency failure, object has been modified." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Password not correct." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Passwords must be at least {0} characters." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Passwords must have at least one digit ('0'-'9')." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Passwords must have at least one lowercase ('a'-'z')." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Passwords must have at least one non alphanumeric character." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Passwords must have at least one uppercase ('A'-'Z')." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Passwords must use at least {0} different characters." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Personal Data" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Please check your email to confirm your account." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Please enter an email address for this site below and click the Register button to finish logging in." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Put these codes in a safe place." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Recovery code redemption failed." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Recovery code verification" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Recovery codes" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Register as a new user" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Register confirmation" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Registered Logins" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Remove this {0} login from your account" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset authenticator app" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset authenticator key" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset password" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset password confirmation" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset recovery codes" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Reset your password." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Role Assignment" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Role name '{0}' is already taken." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Role name '{0}' is invalid." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Scan the QR Code or enter this key &lt;kbd&gt;{0}&lt;/kbd&gt; into your two factor authenticator app. Spaces and casing do not matter." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Send verification email" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Set password" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Set your password" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Setup authenticator app" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Thank you for confirming your email change." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Thank you for confirming your email." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The external login was added." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The external login was not added. External logins can only be associated with one account." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The external login was not removed." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The external login was removed." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The new password and confirmation password do not match." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="The password and confirmation password do not match." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="This account has been locked out, please try again later." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="This action only disables 2FA." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="This app does not currently have a real email sender registered, see &lt;a href=\&quot;https://aka.ms/aspaccountconf\&quot;&gt;these docs&lt;/a&gt; for how to configure a real email sender. Normally this would be emailed: &lt;a id=\&quot;confirm-link\&quot; href=\&quot;{0}\&quot;&gt;Click here to confirm your account&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="This process disables 2FA until you verify your authenticator app. If you do not complete your authenticator app configuration you may lose access to your account." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="To enable QR code generation please read our {0}documentation{1}." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="To use an authenticator app go through the following steps:" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Two-factor authentication" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Two-factor authentication (2FA)" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unable to load two-factor authentication user." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unable to load user with email '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unable to load user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred adding external login for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred deleting user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred disabling 2FA for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred loading external login info for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred removing external login for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred setting email for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred setting full name for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Unexpected error occurred setting phone number for user with ID '{0}'." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Update password" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Use a local account to log in." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="User already has a password set." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="User already in role '{0}'." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="User is not in role '{0}'." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="User name '{0}' is already taken." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="User name '{0}' is invalid, can only contain letters or digits." xml:space="preserve">
+    <value />
+    <comment>Identities</comment>
+  </data>
+  <data name="Verification code is invalid." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Verification email sent. Please check your email." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You are a manager right now." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You can &lt;a asp-page=\&quot;./GenerateRecoveryCodes\&quot;&gt;generate a new set of recovery codes&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You do not have a local username/password for this site. Add a local account so you can log in without an external login." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You have 1 recovery code left." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You have generated new recovery codes." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You have no recovery codes left." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You have successfully logged out of the application." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You have {0} recovery codes left." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You must &lt;a asp-page=\&quot;./GenerateRecoveryCodes\&quot;&gt;generate a new set of recovery codes&lt;/a&gt; before you can log in with a recovery code." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You should &lt;a asp-page=\&quot;./GenerateRecoveryCodes\&quot;&gt;generate a new set of recovery codes&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="You've successfully authenticated with" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your account contains personal data that you have given us. This page allows you to download or delete that data." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your authenticator app has been verified." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your authenticator app key has been reset, you will need to configure your authenticator app using the new key." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your email is unchanged." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your login is protected with an authenticator app. Enter your authenticator code below." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your password has been changed." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your password has been reset. Please &lt;a asp-page=\&quot;./Login\&quot;&gt;click here to log in&lt;/a&gt;." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your password has been set." xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+  <data name="Your profile has been updated" xml:space="preserve">
+    <value />
+    <comment>IdentityUI</comment>
+  </data>
+</root>

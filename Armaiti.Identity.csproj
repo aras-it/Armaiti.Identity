@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Authors>Farrokh Rezazadeh</Authors>
+    <Company>Aras IT</Company>
+    <Description>Armaiti Identity is the localized UI Pages for the ASP.NET Core Identity framework.
+
+This package was built from the source code at https://github.com/aras-it/Armaiti.Identity
+    </Description>
+    <Copyright>https://arasit.com</Copyright>
+    <RepositoryUrl>https://github.com/aras-it/Armaiti.Identity</RepositoryUrl>
+    <PackageTags>identity, identityui, dotnetcore, aspnetcore, localization</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/aras-it/Armaiti.Identity</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyName>Armaiti.Identity</AssemblyName>
+    <RootNamespace>Armaiti.Identity</RootNamespace>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.1.0</Version>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageIcon>armaiti.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" Version="3.1.0" />
+    <PackageReference Include="Armaiti.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="_files\images\armaiti.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="_files\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
